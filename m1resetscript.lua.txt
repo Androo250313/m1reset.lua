@@ -1,1 +1,7 @@
-if tostring(game.GameId)=="3808081382" then loadstring(game:HttpGet("https://raw.githubusercontent.com/Androo250313/m1-reset/refs/heads/main/3808081382.lua"))() end
+local supportedGames = {
+    "3808081382"
+}
+
+if table.find(supportedGames, tostring(game.GameId)) then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Androo250313/m1-reset/refs/heads/main/" .. game.GameId .. ".lua"))()
+end
