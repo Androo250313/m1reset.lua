@@ -1,5 +1,5 @@
 local supportedGames = {
-    "3808081382"
+    "3808081382" 
 }
 
 if table.find(supportedGames, tostring(game.GameId)) then
